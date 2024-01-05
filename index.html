@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset "utf-8">
+        <link rel="stylesheet" href="mafia.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
+        <title>Mafia</title>
+    </head>
+    <body>
+        <h1>Mafia</h1>
+        <main>
+            <h2>Welcome to the Mafia elimination game!</h2>
+            <div id="howToPlay">
+                <h2 style="text-decoration: underline">How to play</h2>
+                <p>
+                    There are 16 players you can choose from. 5 players are mafia and 11 players are citizens.
+                    The goal for the mafia is to eliminate all the citizens and for the citizens to eliminate all the mafia.
+                </p>
+                <p>
+                    Within the citizens. One player is a sheriff who's goal is to accuse other players as mafia before eliminating
+                    them. And two players are doctors which must try to save the player the mafia is targeting. The rest of the players
+                    are civilians whom will not know which characters are Mafia, sheriff, or doctors.
+                </p>
+                <p>
+                    Each round will start with the Mafia selecting one player to eliminate. Then the cop will select a player
+                    to accuse as mafia. Then the doctors will select a player to save. The results will be shown afterwars and the
+                    selected players will be eliminated unless saved by a doctor.
+                </p>
+                <p>
+                    The round will end with all the players voting for who they would like to eliminate. If the eliminated player's 
+                    card turns red, they were a mafia. If it turns blue, they were a citizen. The game ends when there are more mafia
+                    than citizens, or all mafia have been eliminated
+                </p>
+                <p>Please note: if you refresh the page, the game will restart! And different roles will be assigned to the players.</p>
+                <p>Good luck and have fun!</p>
+            </div>
+            <a href="mafia.html"><h2 id="next">Play</h2></a>
+            <script>
+                const next = document.getElementById('next');
+                next.addEventListener('mouseenter', function() {
+                    next.style.backgroundColor = 'green'; 
+                });
+
+                next.addEventListener('mouseleave', function() {
+                    next.style.backgroundColor = 'darkolivegreen'; 
+                });
+            </script>
+        </main>
+    </body>
+    <footer id="footer">
+        &copy;Copyright Evan's Portfolio 2024
+    </footer>
+</html>
