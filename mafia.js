@@ -91,7 +91,7 @@ function showSelectedPlayer(player) {
     footer.style.display = 'none';
     playerList.style.display = 'none';
     const img = document.createElement('img');
-    img.src = `../images/${player.name}.jpg`;
+    img.src = `${player.name}.jpg`;
     img.alt = player.name;
     img.height = 200;
     selectedPlayer.appendChild(img);
@@ -325,7 +325,7 @@ function renderPlayers() {
             
 
             const img = document.createElement('img');
-            img.src = `../images/${player.name}.jpg`;
+            img.src = `./${player.name}.jpg`;
             img.alt = player.name;
             img.height = 120;
             img.style.borderRadius = '10px';
@@ -398,7 +398,7 @@ function renderMafiaTarget(targetPlayer) {
     mafiaTargetScreen.style.display = 'block';
     if (!mafiaTargetDivCreated) {
         const eliminatedPlayer = document.createElement('img');
-        eliminatedPlayer.src = `../images/${targetPlayer.name}.jpg`
+        eliminatedPlayer.src = `${targetPlayer.name}.jpg`
         eliminatedPlayer.alt = targetPlayer.name;
         eliminatedPlayer.id = 'eliminatedByMafia';
         mafiaTargetScreen.appendChild(eliminatedPlayer);
@@ -406,7 +406,7 @@ function renderMafiaTarget(targetPlayer) {
     }
     else {
         const eliminatedPlayer = document.getElementById('eliminatedByMafia');
-        eliminatedPlayer.src = `../images/${targetPlayer.name}.jpg`
+        eliminatedPlayer.src = `${targetPlayer.name}.jpg`
         eliminatedPlayer.alt = targetPlayer.name;
     }
 }
@@ -416,7 +416,7 @@ function renderSheriffTarget(targetPlayer) {
     sheriffTargetScreen.style.display = 'block';
     if (!sheriffTargetDivCreated) {
         const eliminatedPlayer = document.createElement('img');
-        eliminatedPlayer.src = `../images/${targetPlayer.name}.jpg`
+        eliminatedPlayer.src = `${targetPlayer.name}.jpg`
         eliminatedPlayer.alt = targetPlayer.name;
         eliminatedPlayer.id = 'eliminatedBySheriff';
         sheriffTargetScreen.appendChild(eliminatedPlayer);
@@ -424,7 +424,7 @@ function renderSheriffTarget(targetPlayer) {
     }
     else {
         const eliminatedPlayer = document.getElementById('eliminatedBySheriff');
-        eliminatedPlayer.src = `../images/${targetPlayer.name}.jpg`
+        eliminatedPlayer.src = `${targetPlayer.name}.jpg`
         eliminatedPlayer.alt = targetPlayer.name;
     }
 }
