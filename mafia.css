@@ -2,7 +2,7 @@ body {
     margin: 0;
     color: #FFFFFF;
     background-color: black;
-    background-image: url('hauntedBackground.jpg');
+    background: url('hauntedBackground.jpg');
     background-repeat: no-repeat;
 }
 
