@@ -233,7 +233,7 @@ async function Results() {
         }
     }
     if (numSheriff > 0 && sheriffTarget >= 0 && players[mafiaTarget].role !== 'Sheriff') {
-        if (players[sheriffTarget] === 'Mafia') {
+        if (players[sheriffTarget].role === 'Mafia') {
             await sleep(3000);
             renderSheriffTarget(players[sheriffTarget]);
             prompt.textContent = "The Sherrif has sent " + players[sheriffTarget].name + " to jail!";
